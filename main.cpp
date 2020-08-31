@@ -23,8 +23,10 @@ using namespace std;
 #include "BinarySearchTree.h"
 
 int main(int argc, char** args) {
+
 int count = 0;
 std::vector<string> v;
+
 //input and add the inputs into a vector
 std::string input;
 getline(cin, input);
@@ -33,12 +35,12 @@ str_strm << input;
 string temp_str;
 string temp_int;
 while(!str_strm.eof()) {
-str_strm >> temp_str;
-if(stringstream(temp_str) >> temp_int) {
-v.push_back(temp_int);
-count++;
-}
-temp_str = "";
+	str_strm >> temp_str;
+	if(stringstream(temp_str) >> temp_int) {
+		v.push_back(temp_int);
+		count++;
+	}
+	temp_str = "";
 }
 
 //Check to see which functions to use
